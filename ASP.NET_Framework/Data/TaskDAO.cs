@@ -7,7 +7,7 @@ namespace ASP.NET_Framework.Data
 {
     internal class TaskDAO
     {
-        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=ToDoTasks;Integrated Security=True";
+        private string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ToDoTasks;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         public List<TaskModel> FetchAll()
         {
             List<TaskModel> returnList = new List<TaskModel>();
